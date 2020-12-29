@@ -1,0 +1,112 @@
+
+body {
+    background-color:#68b0ac4d;
+    margin:0 auto;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .navbar {
+   /* background-color:rgba(235,244,243, 90%); */
+   padding: .3em;
+   height: 75%;
+  }
+  
+  .navbar-menu {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .hero {
+   color: #ffffff;
+   font-family: sans-serif;
+   vertical-align: middle;
+   /* background-color:rgba(255,255,255, 50%); */
+  }
+  
+  #process-container, .p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-color: black;
+    color: #ff7e67;
+  }
+  
+  #process-container p:hover {
+    color: #68b0ab;
+  }
+  
+  .notification a:not(.button):not(.dropdown-item) { 
+    text-decoration: none;
+    color: #ff7e67;
+  }
+  
+  .tile-shadow {
+  transition: box-shadow .3s;
+  }
+  
+  .tile-shadow:hover {
+  box-shadow: 0 0 10px rgba(33,33,33,.2); 
+  }
+  
+  #profile-container {
+    color: black;
+    /* background-color: white; */
+    /* padding-bottom: 20px; */
+  }
+  
+  .notification {
+    padding-top: 1.25rem;
+    padding-right: 2rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+  }
+  
+  .slider-navigation-next {
+    left: auto;
+    right: 0;
+    background: #fff center center no-repeat;
+    background-size: 20px 20px;
+    margin-right: 5px;
+  }
+  
+  .slider-navigation-previous {
+    margin-left: 5px;
+  }
+  
+  .is-horizontal-center {
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+  
+  .footer {
+    padding:2rem 1.5rem 2rem;
+    background-color: #ecf4f3;
+    /* border-top: 1px solid #006a71; */
+    color: darkslategrey;    
+  }
+  
+  /* Parallax test but removed the html already, I left it in case it's an option for the profile section on homepage */
+  .parallax {
+    /* The image used */
+    /* background-image: url("/assets/img/logo-gf.png"); */
+  
+    min-height: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  

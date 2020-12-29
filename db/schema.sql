@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS giftFairy;
+
+CREATE DATABASE giftFairy;

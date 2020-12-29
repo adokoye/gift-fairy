@@ -1,0 +1,53 @@
+<section class="hero is-fullheight" id="form">
+    <div class="hero-body">
+        {{!-- This is the white rounded box surrounding the registration form. --}}
+        <div class="container is-bordered box is-desktop px-5 py-6">
+            <div class="title has-text-centered">
+                <strong>Register</strong>
+            </div>
+            <p class="is-size-6-fullhd has-text-centered is-mobile pb-3">It's easier to save your profile and share it
+                anytime and anywhere.</p>
+            <div class="columns is-multiline is-centered">
+                <!-- registration form -->
+                <div class="column is-bordered is-6 is-centered">
+                    <form id="fs-frm" action="" method="POST" name="registration-form" accept-charset="utf-8">
+                        <fieldset id="fs-frm-inputs">
+                            <!-- first and last name input -->
+                            <div class="py-5 px-3">
+                                <label for="full-name" class="title">Full Name</label>
+                                <div class="control">
+                                    <input type="text" name="name" id="full-name" placeholder="e.g. Jane Fairwell"
+                                        required="">
+                                    <!-- birthday input -->
+                                    <div class="py-5">
+                                        <label for="date" class="title">Birthday</label>
+                                        <div class="field">
+                                            <input type="date" name="birthdate" id="birthdate" required="">
+                                        </div>
+                                        <!-- email address input -->
+                                        <div class="py-5">
+                                            <label for="email-address" class="title">Email</label>
+                                            <div class="field">
+                                                <input type="email" name="replyto" id="email-address"
+                                                    placeholder="e.g. jane@gmail.com" required="">
+                                            </div>
+                                        </div>
+                                        <!-- password field - do we need validation? -->
+                                        <div class="field">
+                                            <label for="" class="label">Password</label>
+                                            <input type="password" placeholder="*******"
+                                                class="input" id="register_password" required="">
+                                        </div>
+                                        <div class="pb-3 has-text-centered">
+                                            <input type="submit" class="" value="Register" id="register">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

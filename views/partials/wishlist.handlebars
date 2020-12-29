@@ -1,0 +1,223 @@
+<!-- detailed wishlist -->
+<section class="container" id="wishlist">
+    <div class="column is-fullwidth pt-6 is-centered">
+        <div class="columns is-centered">
+            <div class="column title has-text-centered is-10">
+                <p><strong>Make Your Wishlist</strong></p>
+            </div>
+        </div>
+        <!-- input wishlist items form -->
+        <div class="columns is-12">
+            <div class="column mx-6">
+                <form>
+                    {{!-- <div class="field">
+                        <label for="" class="label">Category</label>
+                        <div class="field">
+                            <div class="control is-expanded">
+                                <div class="select is-fullwidth is-hoverable" required="">
+                                    <select name="wishlist item" id="category">
+                                        <option value="">Select item type category?</option>
+                                        <option value="Accessories">Fashion</option>
+                                        <option value="Appliances">Appliances</option>
+                                        <option value="Art">Art</option>
+                                        <option value="Auto">Auto</option>
+                                        <option value="Books">Books</option>
+                                        <option value="Clothing">Clothing</option>
+                                        <option value="Computers">Computers</option>
+                                        <option value="Cooking Tools">Cooking</option>
+                                        <option value="Craft">Craft</option>
+                                        <option value="Electronics">Electronics</option>
+                                        <option value="Fitness">Fitness</option>
+                                        <option value="Food">Food</option>
+                                        <option value="Garden">Garden</option>
+                                        <option value="Home">Home</option>
+                                        <option value="Movies">Movies</option>
+                                        <option value="Music">Music</option>
+                                        <option value="Pets">Pets</option>
+                                        <option value="Photo">Photo</option>
+                                        <option value="Shoes">Shoes</option>
+                                        <option value="Sports">Sports</option>
+                                        <option value="Toys & Games">Toys & Games</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <div class="field">
+                        <label for="" class="label">Brand</label>
+                        <input type="text" placeholder="" class="input" id="brand" required="">
+                    </div>
+                    <div class="field">
+                        <label for="" class="label">Item name</label>
+                        <input type="text" placeholder="" class="input" id="product" required="">
+                    </div>
+                    <div class="pb-5 has-text-centered">
+                        <input type="submit" class="button" value="Add Item" id="add-item">
+                    </div>
+                </form>
+            </div>
+
+            <!-- panel for saved wishlist items -->
+            <div class="column panel is-5 my-3 is-desktop" id="panel">
+                <p class="panel-heading" id="paneltitle">
+                    Your Wishlist!
+                </p>
+                <nav class="is-boxed">
+                    <div class="container" id="wishlist-panel">
+                        <ul class="tabs py-2 is-boxed">
+                            <li class="tablinks"></li>
+                            <!-- <li class="tablinks"><a href="#electronics">Electronics</a></li>
+                <li class="tablinks"><a href="#fashion">Fashion</a></li>
+                <li class="tablinks"><a href="#home">Home &Garden</a></li>
+                <li class="tablinks"><a href="#pets">Pets</a></li> -->
+                            {{!-- <li class="tablinks"><a href="#search"><strong>Search Items</strong></a></li> --}}
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="tab content" id="items">
+                    <ul class="container is-6">
+                        {{!-- <il class="tab-pane animated" id="all" name="all"> --}}
+                            <div id="all">
+                                {{#each data.wishitems}}
+                                <p>{{this.brand_name}} {{this.item_name}}<button class="delete is-pulled-left" id="wishitem-{{this.id}}"></button></p>
+                                {{/each}}
+                            </div>
+                        {{!-- </il> --}}
+
+
+                        <il id="electronics" class="tab-pane animated" name="electronics">
+                            <p>Le Creuset dutch oven<button class="delete is-pulled-left"></button></p>
+                            <p>Apple iPhone 12<button class="delete is-pulled-left"></button></p>
+                            <p>Apple iPhone 12<button class="delete is-pulled-left"></button></p>
+                            <p>H&M pants<button class="delete is-pulled-left"></button></p>
+                            <p>black jacket<button class="delete is-pulled-left"></button></p>
+                            <p>LG Monitor<button class="delete is-pulled-left"></button></p>
+                            <p>Converse high-top<button class="delete is-pulled-left"></button></p>
+                        </il>
+
+                        <il id="fashion" class="tab-pane animated" name="fashion">
+                            <p>Apple iPhone 12<button class="delete is-pulled-left"></button></p>
+                            <p>H&M pants<button class="delete is-pulled-left"></button></p>
+                            <p>black jacket<button class="delete is-pulled-left"></button></p>
+                            <p>LG Monitor<button class="delete is-pulled-left"></button></p>
+                            <p>Converse high-top<button class="delete is-pulled-left"></button></p>
+                            <p>Apple iPhone 12<button class="delete is-pulled-left"></button></p>
+                            <p>H&M pants<button class="delete is-pulled-left"></button></p>
+                            <p>black jacket<button class="delete is-pulled-left"></button></p>
+                            <p>LG Monitor<button class="delete is-pulled-left"></button></p>
+                            <p>Converse high-top<button class="delete is-pulled-left"></button></p>
+                        </il>
+
+                        <il id="pets" class="tab-pane animated" name="pets">
+                            <p>Converse high-top<button class="delete is-pulled-left"></button></p>
+                            <p>Apple iPhone 12<button class="delete is-pulled-left"></button></p>
+
+                            <il id="home" class="tab-pane animated" name="home">
+                                <p>LG Monitor<button class="delete is-pulled-left"></button></p>
+                                <p>Converse high-top<button class="delete is-pulled-left"></button></p>
+                                <p>Apple iPhone 12<button class="delete is-pulled-left"></button></p>
+                            </il>
+
+                            {{!-- search section with datalist and autocomplete --}}
+                            {{!-- <li id="search" class="tab-pane animated">
+                                <form class="form" id="form" autocomplete="on">
+                                    <div class="field">
+                                        <label class="label">See if an item is already added in
+                                            this list</label>
+                                        <div class="control">
+                                            <input list="wish_search" onkeydown="" class="input" type="text"
+                                                placeholder="Search for wish items.." name="input" id="input0">
+                                            <datalist id="wish_search">
+                                                {{#each data.wishitems}}
+                                                <option value="{{this.brand_name}} {{this.item_name}}">{{this.brand_name}} {{this.item_name}}
+                                                </option>
+                                                {{/each}} --}}
+
+                                                {{!-- {{#each brand_name && item_name}}
+                                            <option value="{{{brand_name && item_name}}}">{{{brand_name && item_name}}}
+                                            </option>
+                                            {{/each}} --}}
+
+                                                {{!-- Filler code for Demo --}}
+                                                <option value="Dell-Latitude 14">Dell-Latitude 14"</option>
+                                                <option value="Apple iPhone 12">Apple iPhone 12</option>
+                                                <option value="Creuset dutch oven">Creuset dutch oven</option>
+                                                <option value="H&M pants">H&M pants</option>
+                                                <option value="black jacket">black jacket</option>
+                                                <option value="LG Monitor">LG Monitor</option>
+                                                <option value="Converse high-top">Converse high-top"</option>
+                                            </datalist>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- wishlist buttons -->
+        <div class="container py-5" id="wishlist-btns">
+            <div class="is-horizontal">
+                <div class="columns is-6">
+                    <!-- wishlist complete button -->
+                    <div class="column">
+                        <div class="has-text-centered">
+                            <input type="submit" class="button" value="Done" id="save-btn">
+                        </div>
+                    </div>
+                    <!-- modal to share wishlist via email or download -->
+                    <div class="column" id="email">
+                        <div class="has-text-centered">
+                            <div id="modal" class="modal">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <div class="box">
+                                        <div class="columns is-6">
+                                            <div class="column is-6">
+                                                <article class="media">
+                                                    <div class="title has-text-centered">
+                                                        <p>Hey {{data.full_name}}, let's share your list!</p>
+                                                    </div>
+                                                </article>
+                                                <div class="column">
+                                                    <label class="label">Message</label>
+                                                    <textarea id="message" class="textarea"
+                                                        placeholder="Textarea"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    {{!-- <div class="column is-3">
+                                                                <label class="label">Friend's Name</label>
+                                                                    <input class="is-active" type="name" placeholder="" value="Jane">
+                                                            </div> --}}
+                                                    <div class="column is-3">
+                                                        <label class="label">Email</label>
+                                                        <input class="is-active" id="email-input" type="email"
+                                                            placeholder="Email input" value="jane@gmail.com">
+                                                    </div>
+                                                    <div class="column is-2 has-text-centered">
+                                                        <div class="control">
+                                                            <button class="button" id="send-email">Send
+                                                                Email</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                            </div>
+                            <button class="button" id="share-btn">Share Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

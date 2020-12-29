@@ -1,0 +1,75 @@
+
+.tab-pane {
+  display: none;
+}
+.tab-pane:target {
+  display: block;
+  max-height: 20em;
+  overflow: auto;
+}
+
+#paneltitle {
+color:white;
+background-color: #006a70;
+}
+
+
+#profile,
+#register,
+#logout,
+#wishlist [type="submit"],
+#cat-btn,
+#save-btn,
+#share-btn,
+#send-email {
+background-color: #ff7e67e6;
+color: white;
+}
+
+#account-login,
+#login {
+color: #006a70;
+color: #ff7e67e6;
+}
+
+#register:hover,
+#login:hover,
+#account-login:hover,
+#logout:hover,
+#profile:hover,
+#register:hover,
+#logout:hover,
+#wishlist [type="submit"]:hover,
+#cat-btn:hover,
+#save-btn:hover,
+#share-btn:hover,
+#send-email:hover {
+background-color: #68b0ac;
+color: white;
+}
+
+
+#register:focus,
+#login:focus,
+#account-login:focus,
+#logout:focus,
+#profile:focus,
+#register:focus,
+#logout:focus,
+#wishlist [type="submit"]:focus,
+#cat-btn:focus,
+#save-btn:focus,
+#share-btn:focus,
+#send-email:focus {
+background-color: #006a70;
+color: white;
+}
+
+#shoe-size,
+#shirt-size,
+#favorite-color,
+#favorite-brand,
+#brand,
+#product {
+color: black;
+}

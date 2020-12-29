@@ -1,0 +1,38 @@
+{
+  "name": "gift-fairy-app",
+  "version": "1.0.0",
+  "description": "## Features * Gift registry page. * Give clothing and shoe sizes for yourself and gift preferences. * Allow members to make comments and suggestions on wish lists that cannot be viewed by owner. * Databases for wishlist, users, wishlist comments, wishlist items... * Edit wishlist items only if there are no comments. * Remove and add wishlist items. * Adding ability to mark item as purchased/taken care of.",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "jest": "^26.6.2",
+    "mailer": "^0.6.7",
+    "mysql2": "^2.2.5",
+    "node": "^15.0.1",
+    "nodemailer": "^6.4.15",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gift-Fairy/gift-fairy-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gift-Fairy/gift-fairy-app/issues"
+  },
+  "homepage": "https://github.com/Gift-Fairy/gift-fairy-app#readme"
+}

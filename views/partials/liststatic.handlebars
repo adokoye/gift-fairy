@@ -1,0 +1,75 @@
+<!-- detailed wishlist -->
+<section class="container" id="wishlist">
+    <div class="column is-fullwidth pt-6 is-centered">
+        <div class="column is-centered">
+            <div class="column title has-text-centered is-12">
+                <p><strong>{{data.full_name}}'s Wish List</strong></p>
+            </div>
+        </div>
+
+        <!-- shoe size, shirt size, brands, colors  -->
+        <div class="container" id="userdetails">
+            <div class="has-text-centered"><strong>Here are some details to help customize their gift:</strong>
+            </div>
+            <form class="is-10 is-multiline is-centered is-mobile">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Shoe Size</label>
+                    </div>
+                    <div class="field-body is-2">
+                        <div class="field">
+                            <input type="text" placeholder="9" value='{{data.shoe_size}}' id="shoe-size"
+                                class="input" disabled>
+                        </div>
+                        <div class="field-label is-normal">
+                            <label class="label">Shirt Size:</label>
+                        </div>
+                        <p>
+                        <div class="field">
+                            <input id="shirt-size" class="input" type="text" value='{{data.shirt_size}}'
+                                placeholder="L" disabled>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Favorite Colors:</label>
+                    </div>
+                    <div class="field-body is-3">
+                        <div class="field">
+                            <input type="text" placeholder="Red, White, and Blue" value='{{data.favorite_color}}'
+                                id="favorite-color" class="input" disabled>
+                        </div>
+                        <div class="field-label is-normal">
+                            <label class="label">Favorite Brands:</label>
+                        </div>
+                        <p>
+                        <div class="field">
+                            <input id="favorite-brand" class="input" value='{{data.favorite_brand}}' type="text"
+                                placeholder="Nike, Disney, and Square Enix" disabled>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- panel for saved wishlist items -->
+        <div class="container" box>
+            <div class="column is-7 is-offset-3 my-3 is-desktop">
+                <p class="panel-heading has-text-centered" id="paneltitle">
+                    Your Wishlist!</p>
+                <div class="container box" id="items">
+                    <!-- <ul class=""> -->
+                    <!-- <li> -->
+                    <!-- <il class="tab-pane animated" id="all" name="all"> -->
+                    {{#each data.wishitems}}
+                    <p>{{this.brand_name}} {{this.item_name}}</p>
+                    {{/each}}
+                    <!-- </li> -->
+                </div>
+            </div>
+        </div>

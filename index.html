@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Fairy</title>
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- scripts -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="./assets/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- hero with navbar -->
+    <section class="hero is-small">
+        <div class="hero-head">
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="container pl-6">
+                    <!-- app logo -->
+                    <div class="navbar-brand">
+                        <figure class="image is-128x128">
+                            <img class="navbar-item" src="./assets/img/gift-logo.png">
+                        </figure>
+                    </div>
+                </div>
+    
+                <!-- mobile active signup/create buttons aligned right -->
+                <div id="navbarMenuHeroA" class="navbar-menu  is-active">
+                    <div class="navbar-end">
+                        <div class="navbar-item is-active">
+                            <div class="field is-grouped">
+                                <div class="buttons">
+                                    <a class="button is-primary" data-aos="flip-left" data-aos-duration="1500" id="profile">
+                                        <strong>Create a profile</strong>
+                                    </a>
+                                    <a class="button is-primary is-inverted is-outlined" data-aos="flip-left"
+                                        data-aos-duration="1500" id="login">
+                                        <strong>Login</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <!-- hero section image, video or gif -->
+        <div class="hero-body">
+            <div class="container is-fullhd">
+                <!-- "is-16by9" for mobile friendly dimensions -->
+                <figure class="image is-3by1">
+                    <img class="has-ratio" src="./assets/img/hero-image-gift-computer.png">
+                </figure>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <!-- gift fairy process section -->
+    <section id="process-container">
+        <div class="tile is-ancestor">
+            <div class="tile is-12 py-5 px-5 mg-medium">
+                <div class="tile is-parent is-4">
+                    <div class="container">
+                        <article class="tile is-child notification has-text-centered tile-shadow">
+                            <p class="title">Create a Profile</p>
+                            <figure class="image is-4by3 is-centered">
+                                <img src="./assets/img/tile-image-create-a-profile.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent is-4">
+                    <article class="tile is-child notification has-text-centered tile-shadow ">
+                        <p class="title">Make a List</p>
+                        <!-- <i class="fas fa-list-ol fa-5x"></i> -->
+                        <figure class="image is-4by3 is-centered">
+                            <img src="./assets/img/checklist_woman.jpg">
+                        </figure>
+                    </article>
+                </div>
+                <div class="tile is-parent is-4">
+                    <article class="tile is-child notification has-text-centered tile-shadow">
+                        <p class="title">Buy a Gift</p>
+                        <figure class="image is-4by3 is-centered">
+                            <img src="./assets/img/tile-image-buy-a-gift.png">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- showing profiles carousel or slider -->
+    <section id="profile-container">
+        <div class="columns is-centered" data-aos="fade-left" data-aos-delay="500" data-aos-duration="2500">
+            <div class="column is-10 pt-6">
+                <article class="message">
+                    <!-- <div class="message-header"></div> -->
+                    <div class="message-body">
+                        <p>"We have 6 popular individuals and the gifts that they would love to get.
+                            If you think you're similar to one of these people, then select profile to jump-start
+                            your profile setup"</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    
+        <!-- carousel begins -->
+        <div class="container is-clipped">
+            <div id="carousel-slider" class="carousel  is-primary">
+    
+                
+                <div class=" columns is-multiline">
+                    <div class="card column is-half is-offset-one-quarter">
+                        <div class="card-image">
+                            <figure class="image is-128x128 is-covered">
+                                <img class="is-rounded" src="./assets/img/hipster.jpg" alt="" />
+                            </figure>
+                            <p class="card-header-title is-centered">
+                                Are you a hipster Santa? Get this gift list!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="columns is-multiline">
+                    <div class="card column is-half is-offset-one-quarter">
+                        <div class="card-image">
+                            <figure class="image is-128x128 is-covered">
+                                <img class="is-rounded" src="./assets/img/hipster.jpg" alt="" />
+                            </figure>
+                            <p class="card-header-title is-centered">
+                                Want to impress that coder in your life? Get this gift list!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class=" columns is-multiline">
+                    <div class="card column is-half is-offset-one-quarter">
+                        <div class="card-image">
+                            <figure class="image is-128x128 is-covered">
+                                <img class="is-rounded" src="./assets/img/hipster.jpg" alt="" />
+                            </figure>
+                            <p class="card-header-title is-centered">
+                                Game of Thrones fan? Get this gift list!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="columns is-multiline">
+                    <div class="card column is-half is-offset-one-quarter">
+                        <div class="card-image">
+                            <figure class="image is-128x128 is-covered">
+                                <img class="is-rounded" src="./assets/img/hipster.jpg" alt="" />
+                            </figure>
+                            <p class="card-header-title is-centered">
+                                Want to impress that coder in your life? Get this gift list!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class=" columns is-multiline">
+                    <div class="card column is-half is-offset-one-quarter">
+                        <div class="card-image">
+                            <figure class="image is-128x128 is-covered">
+                                <img class="is-rounded" src="./assets/img/hipster.jpg" alt="" />
+                            </figure>
+                            <p class="card-header-title is-centered">
+                                Want to impress that coder in your life? Get this gift list!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="content has-text-centered">
+            Made with ❤️ Devin Gibson | Ida Krause | Monica Tam | Tony Zeuch | 2020
+        </div>
+    </footer>
+
+    <!-- bulma calendar ext in case we need it -> 'https://creativebulma.net/product/calendar/demo' -->
+    <script src="~bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+    <!-- carousel plugin for bulma -->
+    <script type="text/javascript"src="/node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+    
+    </html>
